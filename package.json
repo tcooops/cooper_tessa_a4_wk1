@@ -1,0 +1,30 @@
+{
+  "name": "cooper_tessa_a4_wk1",
+  "version": "1.0.0",
+  "description": "learning node and npm",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tcooops/cooper_tessa_a4_wk1.git"
+  },
+  "keywords": [
+    "node",
+    "npm",
+    "github",
+    "authoring4"
+  ],
+  "author": "TBC",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tcooops/cooper_tessa_a4_wk1/issues"
+  },
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.7",
+    "underscore": "^1.12.0"
+  }
+}

@@ -7,7 +7,7 @@
 * Use a modern browser such as Google Chrome.
 
 ## Installation
-* `CD` to the location of your choice, then `git clone` the project and browse away!
+* `CD` to the location of your choice, view the package.json file, install dependencies, then `git clone` the project and browse away!
 
 ## Built With
 * Node JS

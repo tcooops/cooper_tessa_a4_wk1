@@ -31,7 +31,7 @@ const server = http.createServer((req, res) => {
         // always handle breakage and errors first
         if (err) {
           res.writeHead(404);
-          res.write('Uh oh! 404 not found!');
+          res.write('404 not found!');
         } else {
             res.write(data);
         }
@@ -51,7 +51,7 @@ const server = http.createServer((req, res) => {
     break;
 
     default:
-    res.end('<h2>Hola amigos! Dos cerveza por favor! Mucho gracias, buen dia.</h2>'); // serve up a custom error page for routes that don't match
+    res.end('Hola amigos! Dos cerveza por favor! Mucho gracias, buen dia.'); // serve up a custom error page for routes that don't match
   }
 
   

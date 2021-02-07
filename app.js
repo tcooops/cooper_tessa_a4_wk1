@@ -14,7 +14,7 @@ const server = http.createServer((req, res) => {
 
   switch (url) {
 
-    case "/":
+  /*  case "/":
         stream.readFile('index.html', null, ((err, data) => {
           // always handle breakage and errors first
           if (err) {
@@ -24,7 +24,7 @@ const server = http.createServer((req, res) => {
               res.write(data);
           }
           }))
-      break;
+      break; */
 
     case "/contact":
       stream.readFile('contact.html', null, ((err, data) => {

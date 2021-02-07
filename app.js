@@ -51,7 +51,7 @@ const server = http.createServer((req, res) => {
     break;
 
     default:
-    res.end('Hola amigos! Dos cerveza por favor! Mucho gracias, buen dia.'); // serve up a custom error page for routes that don't match
+    res.end('<h2>Hola amigos! Dos cerveza por favor! Mucho gracias, buen dia.</h2>'); // serve up a custom error page for routes that don't match
   }
 
   

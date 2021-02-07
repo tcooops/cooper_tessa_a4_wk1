@@ -13,6 +13,19 @@ const server = http.createServer((req, res) => {
 
 
   switch (url) {
+
+    case "/":
+        stream.readFile('index.html', null, ((err, data) => {
+          // always handle breakage and errors first
+          if (err) {
+            res.writeHead(404);
+            res.write('Uh oh! 404 not found!');
+          } else {
+              res.write(data);
+          }
+          }))
+      break;
+
     case "/contact":
       stream.readFile('contact.html', null, ((err, data) => {
         // always handle breakage and errors first
@@ -37,20 +50,8 @@ const server = http.createServer((req, res) => {
         }))
     break;
 
-    case "/contact":
-      stream.readFile('contact.html', null, ((err, data) => {
-        // always handle breakage and errors first
-        if (err) {
-          res.writeHead(404);
-          res.write('Uh oh! 404 not found!');
-        } else {
-            res.write(data);
-        }
-        }))
-    break;
-
     default:
-        res.end('Hola amigos! Dos cerveza por favor! Mucho gracias, buen dia.'); // this is just a piece of txt we sent to browser
+    res.end('<h2>Hola amigos! Dos cerveza por favor! Mucho gracias, buen dia.</h2>'); // serve up a custom error page for routes that don't match
   }
 
   
